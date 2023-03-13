@@ -9,11 +9,12 @@ function App() {
   const [text, setText] = useState('')
 
   return (
-    <div>
+    <>
       <Field onChange={setText} />
       <Languages language={language} onLanguageChange={setLanguage}/>
+      <hr />
       <Translate text={text} language={language}/>
-    </div>
+    </>
   );
 }
 
